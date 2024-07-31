@@ -1,0 +1,454 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FA638C912C11CF020025F83B /* OpenAI in Frameworks */ = {isa = PBXBuildFile; productRef = FA638C902C11CF020025F83B /* OpenAI */; };
+		FA638C932C11CF1D0025F83B /* OpenAIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA638C922C11CF1D0025F83B /* OpenAIHandler.swift */; };
+		FA638C952C11EFB30025F83B /* GeneratedLogEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA638C942C11EFB30025F83B /* GeneratedLogEntry.swift */; };
+		FA8DEA452C11A7D100D864F7 /* logitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8DEA442C11A7D100D864F7 /* logitApp.swift */; };
+		FA8DEA472C11A7D100D864F7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8DEA462C11A7D100D864F7 /* ContentView.swift */; };
+		FA8DEA492C11A7D200D864F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA8DEA482C11A7D200D864F7 /* Assets.xcassets */; };
+		FA8DEA4C2C11A7D200D864F7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA8DEA4B2C11A7D200D864F7 /* Preview Assets.xcassets */; };
+		FA8DEA562C11AB0200D864F7 /* CommandLineHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8DEA552C11AB0200D864F7 /* CommandLineHandler.swift */; };
+		FAFAD0512C11FD900093F9A9 /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFAD0502C11FD900093F9A9 /* String+.swift */; };
+		FAFAD0572C1202540093F9A9 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFAD0562C1202540093F9A9 /* SettingsView.swift */; };
+		FAFAD0592C12068B0093F9A9 /* PreferencesHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFAD0582C12068B0093F9A9 /* PreferencesHandler.swift */; };
+		FAFAD05E2C1208050093F9A9 /* SimpleKeychain in Frameworks */ = {isa = PBXBuildFile; productRef = FAFAD05D2C1208050093F9A9 /* SimpleKeychain */; };
+		FAFAD0602C1208F60093F9A9 /* PListCompatible.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFAD05F2C1208F60093F9A9 /* PListCompatible.swift */; };
+		FAFAD0622C1214F40093F9A9 /* DateHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFAD0612C1214F40093F9A9 /* DateHandler.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FA638C922C11CF1D0025F83B /* OpenAIHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAIHandler.swift; sourceTree = "<group>"; };
+		FA638C942C11EFB30025F83B /* GeneratedLogEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratedLogEntry.swift; sourceTree = "<group>"; };
+		FA8DEA412C11A7D100D864F7 /* logit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = logit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA8DEA442C11A7D100D864F7 /* logitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = logitApp.swift; sourceTree = "<group>"; };
+		FA8DEA462C11A7D100D864F7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FA8DEA482C11A7D200D864F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FA8DEA4B2C11A7D200D864F7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FA8DEA4D2C11A7D200D864F7 /* logit.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = logit.entitlements; sourceTree = "<group>"; };
+		FA8DEA552C11AB0200D864F7 /* CommandLineHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandLineHandler.swift; sourceTree = "<group>"; };
+		FAFAD0502C11FD900093F9A9 /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
+		FAFAD0562C1202540093F9A9 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		FAFAD0582C12068B0093F9A9 /* PreferencesHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesHandler.swift; sourceTree = "<group>"; };
+		FAFAD05F2C1208F60093F9A9 /* PListCompatible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PListCompatible.swift; sourceTree = "<group>"; };
+		FAFAD0612C1214F40093F9A9 /* DateHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHandler.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA8DEA3E2C11A7D100D864F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAFAD05E2C1208050093F9A9 /* SimpleKeychain in Frameworks */,
+				FA638C912C11CF020025F83B /* OpenAI in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FA8DEA382C11A7D100D864F7 = {
+			isa = PBXGroup;
+			children = (
+				FA8DEA432C11A7D100D864F7 /* logit */,
+				FA8DEA422C11A7D100D864F7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FA8DEA422C11A7D100D864F7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA8DEA412C11A7D100D864F7 /* logit.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA8DEA432C11A7D100D864F7 /* logit */ = {
+			isa = PBXGroup;
+			children = (
+				FAFAD0552C1201E40093F9A9 /* Views */,
+				FAFAD0532C1201C00093F9A9 /* Models */,
+				FAFAD0522C1201B10093F9A9 /* Managers */,
+				FAFAD0542C1201D20093F9A9 /* Extensions */,
+				FA8DEA482C11A7D200D864F7 /* Assets.xcassets */,
+				FA8DEA4D2C11A7D200D864F7 /* logit.entitlements */,
+				FA8DEA4A2C11A7D200D864F7 /* Preview Content */,
+			);
+			path = logit;
+			sourceTree = "<group>";
+		};
+		FA8DEA4A2C11A7D200D864F7 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FA8DEA4B2C11A7D200D864F7 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FAFAD0522C1201B10093F9A9 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				FA638C922C11CF1D0025F83B /* OpenAIHandler.swift */,
+				FAFAD0612C1214F40093F9A9 /* DateHandler.swift */,
+				FA8DEA552C11AB0200D864F7 /* CommandLineHandler.swift */,
+				FAFAD0582C12068B0093F9A9 /* PreferencesHandler.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		FAFAD0532C1201C00093F9A9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FA638C942C11EFB30025F83B /* GeneratedLogEntry.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FAFAD0542C1201D20093F9A9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FAFAD0502C11FD900093F9A9 /* String+.swift */,
+				FAFAD05F2C1208F60093F9A9 /* PListCompatible.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FAFAD0552C1201E40093F9A9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FA8DEA442C11A7D100D864F7 /* logitApp.swift */,
+				FA8DEA462C11A7D100D864F7 /* ContentView.swift */,
+				FAFAD0562C1202540093F9A9 /* SettingsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA8DEA402C11A7D100D864F7 /* logit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA8DEA502C11A7D200D864F7 /* Build configuration list for PBXNativeTarget "logit" */;
+			buildPhases = (
+				FA8DEA3D2C11A7D100D864F7 /* Sources */,
+				FA8DEA3E2C11A7D100D864F7 /* Frameworks */,
+				FA8DEA3F2C11A7D100D864F7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = logit;
+			packageProductDependencies = (
+				FA638C902C11CF020025F83B /* OpenAI */,
+				FAFAD05D2C1208050093F9A9 /* SimpleKeychain */,
+			);
+			productName = logit;
+			productReference = FA8DEA412C11A7D100D864F7 /* logit.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA8DEA392C11A7D100D864F7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					FA8DEA402C11A7D100D864F7 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = FA8DEA3C2C11A7D100D864F7 /* Build configuration list for PBXProject "logit" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FA8DEA382C11A7D100D864F7;
+			packageReferences = (
+				FA638C8F2C11CF020025F83B /* XCRemoteSwiftPackageReference "OpenAI" */,
+				FAFAD05C2C1208050093F9A9 /* XCRemoteSwiftPackageReference "SimpleKeychain" */,
+			);
+			productRefGroup = FA8DEA422C11A7D100D864F7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA8DEA402C11A7D100D864F7 /* logit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA8DEA3F2C11A7D100D864F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA8DEA4C2C11A7D200D864F7 /* Preview Assets.xcassets in Resources */,
+				FA8DEA492C11A7D200D864F7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA8DEA3D2C11A7D100D864F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAFAD0622C1214F40093F9A9 /* DateHandler.swift in Sources */,
+				FAFAD0602C1208F60093F9A9 /* PListCompatible.swift in Sources */,
+				FA638C932C11CF1D0025F83B /* OpenAIHandler.swift in Sources */,
+				FAFAD0572C1202540093F9A9 /* SettingsView.swift in Sources */,
+				FA8DEA562C11AB0200D864F7 /* CommandLineHandler.swift in Sources */,
+				FA8DEA472C11A7D100D864F7 /* ContentView.swift in Sources */,
+				FA8DEA452C11A7D100D864F7 /* logitApp.swift in Sources */,
+				FAFAD0592C12068B0093F9A9 /* PreferencesHandler.swift in Sources */,
+				FAFAD0512C11FD900093F9A9 /* String+.swift in Sources */,
+				FA638C952C11EFB30025F83B /* GeneratedLogEntry.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		FA8DEA4E2C11A7D200D864F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FA8DEA4F2C11A7D200D864F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		FA8DEA512C11A7D200D864F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = logit/logit.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"logit/Preview Content\"";
+				DEVELOPMENT_TEAM = 55SRM36F8Y;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = nknrdev.logit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		FA8DEA522C11A7D200D864F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = logit/logit.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"logit/Preview Content\"";
+				DEVELOPMENT_TEAM = 55SRM36F8Y;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = nknrdev.logit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA8DEA3C2C11A7D100D864F7 /* Build configuration list for PBXProject "logit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA8DEA4E2C11A7D200D864F7 /* Debug */,
+				FA8DEA4F2C11A7D200D864F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA8DEA502C11A7D200D864F7 /* Build configuration list for PBXNativeTarget "logit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA8DEA512C11A7D200D864F7 /* Debug */,
+				FA8DEA522C11A7D200D864F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FA638C8F2C11CF020025F83B /* XCRemoteSwiftPackageReference "OpenAI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/MacPaw/OpenAI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.9;
+			};
+		};
+		FAFAD05C2C1208050093F9A9 /* XCRemoteSwiftPackageReference "SimpleKeychain" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/auth0/SimpleKeychain.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FA638C902C11CF020025F83B /* OpenAI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA638C8F2C11CF020025F83B /* XCRemoteSwiftPackageReference "OpenAI" */;
+			productName = OpenAI;
+		};
+		FAFAD05D2C1208050093F9A9 /* SimpleKeychain */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FAFAD05C2C1208050093F9A9 /* XCRemoteSwiftPackageReference "SimpleKeychain" */;
+			productName = SimpleKeychain;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = FA8DEA392C11A7D100D864F7 /* Project object */;
+}
